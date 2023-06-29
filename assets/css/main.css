@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Larsseit;
+    src: url("/assets/fonts/Larsseit/Type Dynamic - Larsseit.otf");
+}
+@font-face {
+    font-family: "Petit Formal Script";
+    src: url("/assets/fonts/Petit Formal Script/PetitFormalScript-Regular.ttf");
+}
+
+:root {
+    --bleu_fonce: #003B64;
+    --bleu_clair: #B1DDE8;
+    --sable: #EED5A7;
+    --beige : #F9EEE0;
+    --pomme : #7DC4A3;
+    --blanc : #fff;
+    --PFormalScript : "Petit Formal Script";
+    --Larsseit : Larsseit;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior:smooth
+}
+
+/* bandeau-visite-virtuel */
+.main-container .bandeau-visite-virtuel {
+    width: 70%;
+    margin: 110px auto 30px auto;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    align-items: center;
+}
+
+.main-container .bandeau-visite-virtuel .image-bandeau-visite-virtuel img {
+    width: 100%;
+}
+
+.main-container .bandeau-visite-virtuel .texte-bandeau-visite-virtuel {
+    font-size: 2em;
+    font-family: var(--Larsseit);
+    color:var(--sable);
+    line-height: 1.3;
+}
+
+
+/* image + form */
+
+.main-container .image-form-background {
+    margin-top: 80px;
+    padding: 0 10%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.6fr 0.4fr;
+    background: linear-gradient(to bottom, var(--bleu_fonce) 70%, var(--bleu_clair) 30%);
+}
+
+.main-container .image-form-background .image img {
+    padding: 100px 0;
+    width: 100%;
+}
+.main-container .image-form-background .form {
+    padding: 10px;
+    background-color: var(--pomme);
+    color: var(--blanc);
+}
+
+.main-container .image-form-background .form .titre-image-form-background {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* bandeau inscription */
+.main-container .bandeau-inscription {
+    position: relative;
+    text-align: center;
+    margin: 5% auto;
+}
+.main-container .bandeau-inscription h1 {
+    font-family: var(--PFormalScript);
+}
+.main-container .bandeau-inscription p {
+    font-family: var(--Larsseit);
+    margin: 1% 0;
+}
+
+
+/* Bandeau Qualite */
+.main-container .bandeau-qualite {
+    background-color: var(--bleu_fonce);
+    padding: 60px 0;
+}
+.main-container .bandeau-qualite  h2{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--blanc);
+    padding-bottom: 40px;
+}
+.main-container .bandeau-qualite .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .bandeau-qualite .image img {
+    padding: 0 20px;
+    width: 20%;
+}
+
+
+@media screen and (max-width: 924px){
+    /* bandeau-visite-virtuel */
+    .main-container .bandeau-visite-virtuel {
+        width: 90%;
+    }
+    .main-container .bandeau-visite-virtuel .texte-bandeau-visite-virtuel {
+        font-size: 1.5em;
+    }
+
+
+    /* image + form */
+    .main-container .image-form-background {
+        grid-template-columns: 1fr;
+    }
+    .main-container .image-form-background .image img {
+        padding: 100px 0 0 0;
+        width: 100%;
+    }
+    .main-container .image-form-background .form {
+        margin: 0 0 100px 0;
+    }
+
+    /* Bandeau Qualite */
+    .main-container .bandeau-qualite .image img {
+        width: 30%;
+        margin: 0 0 30px 0;
+    }
+    .main-container .bandeau-qualite  h2 {
+        width: 90%;
+    }
+    .main-container .bandeau-qualite .image {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+

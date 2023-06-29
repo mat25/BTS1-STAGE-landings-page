@@ -1,0 +1,123 @@
+.formulaire-de-contact {
+    background-color: var(--pomme);
+}
+
+#divacacher {
+    z-index: 20;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 500px;
+    height: auto;
+    background-color: var(--pomme);
+}
+
+#divacacher.open {
+    display: flex;
+    animation: transformMenu 400ms ease-in-out forwards;
+}
+
+@keyframes transformMenu {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: initial;
+    }
+}
+
+.close_button_divacacher {
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.close_button_divacacher input {
+    border: none;
+    background-color: var(--pomme);
+    color: var(--blanc);
+    font-family: var(--Larsseit);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formulaire-de-contact form {
+    margin: 25px;
+    color: var(--blanc);
+}
+
+.formulaire-de-contact form input {
+    padding-left: 8px;
+    margin-top: 6px;
+    width: 100%;
+    border-radius: 0;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.formulaire-de-contact form input:focus {
+    outline: 2px solid var(--bleu_clair);
+}
+
+.formulaire-de-contact form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.formulaire-de-contact form .checkbox input[type="checkbox"] {
+    margin-top: 25px;
+    display: block;
+    width: 15%;
+    font-weight: normal;
+    margin-right: 10px;
+    outline: none;
+}
+
+.checkbox {
+    display: flex;
+}
+
+
+.container_btn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: var(--bleu_fonce);
+    font-size: 14px;
+    color: var(--blanc);
+    padding: 15px 25px;
+    font-weight: bold;
+    font-family: var(--Larsseit);
+    border-radius: 25.5px;
+    transition: 0.4s;
+    border: 2px solid var(--bleu_fonce);
+}
+
+.btn:hover{
+    border: 2px solid var(--bleu_fonce);
+    background-color: var(--blanc);
+    color: var(--bleu_fonce);
+    transition: 0.2s;
+}
+
+.erreur-validation {
+    font-size: 18px;
+    margin-top: 5px;
+    color: red;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 924px){
+    #divacacher {
+        width: 100%;
+    }
+}

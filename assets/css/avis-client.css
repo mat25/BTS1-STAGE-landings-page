@@ -1,0 +1,29 @@
+.main-container .avis-client {
+    width: 90%;
+    margin: 80px auto;
+}
+.main-container .avis-client .texte {
+    text-align: center;
+}
+.main-container .avis-client .texte h1 {
+    font-family: var(--PFormalScript);
+}
+.main-container .avis-client .texte h3 {
+    font-family: var(--Larsseit);
+    margin: 30px 0;
+}
+.main-container .avis-client .image-avis-client {
+    display: flex;
+    justify-content: right;
+}
+.main-container .avis-client img {
+    width: 51%;
+    margin: 30px 0;
+}
+
+
+@media screen and (max-width: 924px){
+    .main-container .avis-client img {
+        width: 100%
+    }
+}

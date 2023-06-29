@@ -1,0 +1,32 @@
+footer .main_container-footer {
+
+    font-family: var(--Larsseit);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .main_container-footer .logo-footer {
+    margin: 0 auto;
+}
+footer .main_container-footer .logo-footer img {
+    height: 50px;
+}
+
+footer .main_container-footer .column {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer .main_container-footer .column a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .main_container-footer .column p {
+    text-align: center;
+}
